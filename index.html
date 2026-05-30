@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joker HaHa</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <header id="joker-head">
         <h1>Why are you Laughing?</h1>
     </header>
@@ -22,7 +24,7 @@
         <label for="programming">Programming</label>
         <input type="radio" id="dad" name="type" value="dad">
         <label for="dad">Dad</label>
-        <input type="radio" id="random" name="type" value="random_joke">
+        <input type="radio" id="random" name="type" value="random_joke" checked>
         <label for="random">Random</label>
 
         <button type="submit" id="btnPiada">Feeling Funny?</button>
@@ -30,14 +32,15 @@
     </div>
 
 
-    <div id="joker-mounth" >
+    <div id="joker-mounth" class="hidden">
 
         <h2 id="setup">Joke</h2>
         <p id="punchline">Response</p>
-        
+
 
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,6 +1,7 @@
 const btnPiada = document.getElementById("btnPiada");
 const setup = document.getElementById("setup");
 const punchline = document.getElementById("punchline");
+const jokerMouth = document.getElementById("joker-mounth");
 
 
 function tipoPiada() {
@@ -38,11 +39,12 @@ async function buscarPiada() {
             setup.textContent = dados[0].setup;
             punchline.textContent = dados[0].punchline;
         }
+        jokerMouth.classList.remove("hidden");
         
-
     } catch (erro) {
         setup.textContent = "Erro ao carregar a piada.";
         punchline.textContent = "";
+        jokerMouth.classList.remove("hidden");
         console.error(erro);
     }
 }
