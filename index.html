@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,8 @@
 
     <div id="joker-face">
 
+        <input type="radio" id="random" name="type" value="random_joke">
+        <label for="random">Random</label>
         <input type="radio" id="general" name="type" value="general">
         <label for="general">General</label>
         <input type="radio" id="knock-kncok" name="type" value="knock-knock">
@@ -24,8 +26,7 @@
         <label for="programming">Programming</label>
         <input type="radio" id="dad" name="type" value="dad">
         <label for="dad">Dad</label>
-        <input type="radio" id="random" name="type" value="random_joke" checked>
-        <label for="random">Random</label>
+        
 
         <button type="submit" id="btnPiada">Feeling Funny?</button>
 
@@ -34,7 +35,7 @@
 
     <div id="joker-mounth" class="hidden">
 
-        <h2 id="setup">Joke</h2>
+        <h2 id="setup" class="semErro">Joke</h2>
         <p id="punchline">Response</p>
 
 

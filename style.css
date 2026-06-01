@@ -31,9 +31,9 @@ body {
 
 #joker-face {
     width: 90%;
-    max-width: 700px;
+    max-width: 750px;
     background-color: rgba(255,255,255,0.08);
-    padding: 25px;
+    padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +84,11 @@ button:active {
     margin: 20px;
 }
 
-#setup {
+.erro {
+    color: red;
+}
+
+.semErro {
     color: #2E1065;
     font-size: 1.4rem;
     margin-bottom: 15px;
@@ -102,3 +106,4 @@ button:active {
 .hidden {
     display: none;
 }
+

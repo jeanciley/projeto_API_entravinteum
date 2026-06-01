@@ -40,10 +40,14 @@ async function buscarPiada() {
             punchline.textContent = dados[0].punchline;
         }
         jokerMouth.classList.remove("hidden");
+        jokerMouth.classList.remove("erro");
+        setup.classList.add("semErro");
         
     } catch (erro) {
         setup.textContent = "Erro ao carregar a piada.";
         punchline.textContent = "";
+        jokerMouth.classList.add("erro");
+        setup.classList.remove("semErro");
         jokerMouth.classList.remove("hidden");
         console.error(erro);
     }
